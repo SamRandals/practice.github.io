@@ -35,7 +35,7 @@ body{
     object-fit: cover;
     box-sizing: border-box;
 }
-.header_image-container img:hover{
+.header_image-container img:is(:hover,:active){
     animation: colorChange 1s infinite both linear alternate;
 }
 .header_nav{
