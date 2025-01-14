@@ -17,18 +17,23 @@ body{
     position: sticky;
     top: 0;
     width: 100%;
-    font-size: 35px;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     background-color: rgb(253, 167, 181);
+    height: 100px;
+    animation: header 3s linear alternate;
 }
 .header_image-container{
-    width: 250px;
+    padding: 2px;
+    width: 300px;
+    height: auto;
 }
 .header_image-container img{
     max-width: 100%;
-    width: 250px;
+    width: 200px;
     object-fit: cover;
+    box-sizing: border-box;
 }
 .header_image-container img:hover{
     animation: colorChange 1s infinite both linear alternate;
@@ -64,6 +69,14 @@ padding: 0 30px;
 }
 
 
+/* MEDIA QUERIES DEL HEADER  */
+
+@media (min-width:600px){
+
+    .header{
+        font-size: 35px;
+    }
+}
 /* ANIMACIONES{ */
     @keyframes colorChange{
         from{
@@ -77,16 +90,17 @@ padding: 0 30px;
 
     /* APARTADO DE MAIN  */
 
-.main{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 212, 248);
-    margin: auto;
-    width:500px ;
-    margin-top: 50px    ;
-    border-radius: 2px;
-    height: auto;
-}
+    .main {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 212, 248);
+        margin: auto;
+        max-width: 100%;
+        width: 600px;
+        border-radius: 2px;
+        height: auto;
+        margin-top: 50px;
+    }
 
 .main_aside, .main_data{
     display: flex;
@@ -113,4 +127,14 @@ text-align: center;
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* MEDIA QUERY MAIN */
+
+@media (min-width: 600px) {
+    .main {
+        width: 950px;
+   
+        flex-direction: row;
+    }
 }
