@@ -120,6 +120,8 @@ padding: 0 30px;
     width: 100%;
     padding: 10px;
     flex-grow: 3;
+    font-size: 25px;
+    overflow-x: auto;
 }
 .main_data-content h1{
 text-align: center;
@@ -151,6 +153,15 @@ text-align: center;
 .portfolio{
     background-color: rgb(255, 137, 157);
     
+}
+.portfolio_title-main{
+ text-align: center;
+ font-size: 80px;
+ color: white;
+ letter-spacing: 4px;
+ padding: 0;
+ margin: 0;
+ margin-top: 10px;
 }
 .portfolio_grid{
     display: grid;
@@ -255,4 +266,98 @@ text-align: center;
     .portfolio_grid-content:last-child{
         grid-column: span 3;
     }
+}
+
+
+
+/* APARRTADO DEL FORM DE DATOS DE USUARIO DE COMUNICACION */
+
+.form_container{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: brown;
+    margin: auto;
+    height: 100vh;
+}
+.form{
+    padding: 30px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+  width: 750px;
+  margin: auto;
+  margin-top: 50px;
+}
+.form label{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+.form_input-submit{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: pink;
+    color: white;
+    transition: opacity 1s, color 2s;
+    font-family: 'Party', sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+.form_input-submit:hover{
+    opacity: 0.7;
+    color: rgb(83, 18, 18);
+}
+.form_data label{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+.form_data, input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+}
+.form_data input::placeholder{
+ color: rgb(119, 15, 32);
+ 
+}
+.form_data input{
+    background-color: pink;
+    padding: 5px;
+}
+.form textarea{
+border-radius: 10px;
+background-color: pink;
+height: 100px;
+}
+
+
+
+
+
+
+
+
+
+            /* FOOOTER  */
+
+
+.footer{
+    max-width: 100%;
+    width: 100%;
+    background-color:rgb(87, 34, 43);
+    color: white;
+
+}
+.footer h2{
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 5px;
 }
